@@ -1,0 +1,24 @@
+.slide__block {
+    padding: 20px 50px;
+}
+
+.slide__text {
+    background-color: #FAFAFA;
+    font-weight: 500;
+font-size: 12px;
+line-height: 30.6;
+text-align: center;
+color: #000000;
+}
+
+.slide__text::before {
+    content: "";
+    width: 54px;
+    height: 40px;
+}
+
+
+    
+    
+    
+    

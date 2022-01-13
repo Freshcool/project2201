@@ -1,0 +1,44 @@
+/* 
+основной  цвет заголовка #D41443;
+второй  цвет заголовка #FFA5BA;
+третий  цвет заголовка  #FFFFFF;
+
+основной цвет текста #FFFFFF;
+второй цвет текста #000000;
+третий цвет текста #907E82;
+четвертый цвет текста #FFA5BA;
+
+перый фон #FFFFFF;
+второй фон #FFF5F6;
+герой фон #FFB8CA;
+
+основной фон кнопки #FFFFFF;
+второй фон кнопки  #D41443;
+основной  цвет текста кнопки #D41443;;
+второй  цвет текста кнопки #FFFFFF; 
+
+фон мобильного меню #E17992;
+*/
+
+:root {
+    --main-title-color: #D41443;
+    --second-title-color: #FFA5BA;
+    --third-title-color:#FFFFFF;
+    
+    --main-text-color: #FFFFFF;
+    --second-text-color: #000000;
+    --third-text-color:  #907E82;
+    --fourth-text-color: #FFA5BA;
+    
+    --main-background: #FFFFFF;
+    --second-background: #FFF5F6;
+    --hero-background:  #FFB8CA;
+    
+    --main-background-button:  #FFFFFF;
+    --second-background-button: #D41443;
+    --main-color-text-button: #D41443;
+    --second-color-text-button:  #FFFFFF;
+
+    --background-mob-menu: #E17992;
+    }
+    
