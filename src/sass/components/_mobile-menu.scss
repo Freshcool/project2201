@@ -8,6 +8,9 @@
     padding: 60px 21px;
     z-index:20;
     display: flex;
+    @media screen and (min-width:768px) {
+        width:40%;
+    }
     flex-direction: column;
     &.is-hidden{
         visibility: hidden;
@@ -35,6 +38,9 @@
     line-height: 1,3px;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+    }
 }
 .current{
     color: var(--main-title-color);
