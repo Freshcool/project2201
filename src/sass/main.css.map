@@ -14,6 +14,7 @@
         "layout/_hero-header.scss",
         "layout/_section-about.scss",
         "components/_customer-reviews.scss"
+        "layout/_advantages.scss"
     ],
     "names": [],
     "file": "main.css"
