@@ -148,27 +148,26 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 20px;
+  padding: 0 20px;
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding: 25px 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 35px 35px;
+    padding: 0 34px;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    padding: 116px 116px;
+    padding: 0 116px;
     width: 1280px;
   }
 }
@@ -766,6 +765,208 @@ img {
 
 .section-about {
   background: var(--second-background);
+}
+
+.section-about__pre-title {
+  font-family: Titan One;
+  color: var(--second-title-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-about__pre-title {
+    font-size: 26px;
+    line-height: 1.14;
+    padding-top: 130px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about__pre-title {
+    font-size: 30px;
+    line-height: 1.14;
+    line-height: 1.13;
+    letter-spacing: 0.04rem;
+    padding-top: 125px;
+  }
+}
+
+.section-about__title {
+  font-family: Titan One;
+  color: var(--main-title-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .section-about__title {
+    font-size: 48px;
+    line-height: 1.14;
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about__title {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06rem;
+    padding-top: 15px;
+  }
+}
+
+.section-about__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-about__picture {
+    padding-top: 50px;
+    margin-right: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about__picture {
+    padding-top: 55px;
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-about__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-about__text {
+    width: 340px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about__text {
+    width: 463px;
+    padding-top: 106px;
+  }
+}
+
+.section-about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  padding-bottom: 20px;
+  color: var(--third-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about__list {
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-about__list {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.section-about__list--black {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  padding-bottom: 40px;
+  color: var(--second-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .section-about__list--black {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.section-about__button {
+  font-family: DM Sans;
+  width: 176px;
+  height: 44px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--main-text-color);
+  border-radius: 22px;
+  color: var(--main-color-text-button);
+}
+
+@media screen and (max-width: 767px) {
+  .section-about__button {
+    margin-left: 30px;
+  }
+}
+
+.section-about__icon {
+  margin-left: 15px;
+}
+
+.slide__block {
+  padding: 20px 50px;
+}
+
+.slide__text {
+  background-color: #FAFAFA;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30.6;
+  text-align: center;
+  color: #000000;
+}
+
+.slide__text::before {
+  content: "";
+  width: 54px;
+  height: 40px;
 }
 
 .section-about--title {
