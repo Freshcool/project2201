@@ -7,17 +7,18 @@
     background-color: var(--background-mob-menu);
     padding: 60px 21px;
     z-index:20;
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     @media screen and (min-width:768px) {
         width:40%;
     }
-    flex-direction: column;
     &.is-hidden{
         visibility: hidden;
         pointer-events: none;
-        opacity: 0;   
+        opacity: 0; 
     }
 }
+
 .close-menu-btn{
     padding: 0;
     background-color: var(--header-background);
@@ -44,6 +45,10 @@
     @media screen and (min-width:768px) {
         font-size: 18px;
     }
+    &:hover,
+    &:focus{
+        color: var(--main-title-color) ;
+    }  
 }
 .current{
     color: var(--main-title-color);
