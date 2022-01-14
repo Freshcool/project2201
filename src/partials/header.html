@@ -1,10 +1,10 @@
 <!-- == HEADER == -->
 <header class="header">
     <div class="header__container">
-            <a href="/" class="link header__logo">
-                <img src="./images/logo-min.png" alt="ICECREAM"> 
-            </a>
-            <nav class="nav"></nav>
+        <a href="/" class="link header__logo">
+            <img src="./images/logo-min.png" alt="icecream"> 
+        </a>
+        <nav class="nav">
             <ul class="list nav__list">
                 <li class="nav__item">
                     <a class="link nav__link current"  href="home">Home</a>
@@ -22,16 +22,16 @@
                     <a class="link nav__link" href="">Contact</a>
                 </li>
             </ul> 
-            <button type="button" class="btn--big header__btn--buy">Buy now
-                <svg class="header__icon-forward" width="6" height="8">
-                <use href="./images/icons.svg#icon-forward"></use>
-                </svg>
-            </button>
             <button type="button" class="open-menu-btn">
                 <svg class="btn-open" width="20" height="20">
                 <use href="./images/icons.svg#icon-burger"></use>
             </svg>
             </button>
+            <button type="button" class="btn--big header__btn--buy">Buy now
+                <svg class="header__icon-forward" width="6" height="8">
+                <use href="./images/icons.svg#icon-forward"></use>
+                </svg>
+            </button>  
         </nav> 
         <!-- == MOBILE-MENU == -->
     <div class="menu-container is-hidden">
@@ -47,16 +47,16 @@
         </button>
         <ul class="list menu-container__mobile-menu">
             <li class="menu-container__item">
-                <a class="link menu-container__link current"  href="">Home</a>
+                <a class="link menu-container__link current"  href="home">Home</a>
             </li>
             <li class="menu-container__item">
-                <a class="link menu-container__link" href="">About us</a>
+                <a class="link menu-container__link" href="about">About us</a>
             </li>
             <li class="menu-container__item">
-                <a class="link menu-container__link" href="">How it’s made?</a>
+                <a class="link menu-container__link" href="how it’s made?">How it’s made?</a>
             </li>
             <li class="menu-container__item">
-                <a class="link menu-container__link" href="">Our products</a>
+                <a class="link menu-container__link" href="our products">Our products</a>
             </li>
             <li class="menu-container__item">
                 <a class="link menu-container__link" href="">Contact</a>
@@ -73,10 +73,10 @@
                 </span>  
             </h1>
             <div class="hero__btn--title hero__btn--title-red">
-                <a class="link hero__link--title hero__link--title-white" href="">Products</a>
+                <a class="link hero__link--title hero__link--title-white" href="products">Products</a>
             </div>
             <div class="hero__btn--title">
-                <a class="link hero__link--title" href="">How it’s made?</a>
+                <a class="link hero__link--title" href="how it’s made?">How it’s made?</a>
             </div>
         </div> 
         <div class="hero__ellipse--pink">
@@ -105,11 +105,16 @@
                 ./images/tab/slider-pic5_1@2x.png 2x"
                 media="(min-width:768px)"
                 > 
+                <source 
+                srcset="./images/tab/slider-pic5_1.png 1x,
+                ./images/tab/slider-pic5_1@2x.png 2x"
+                media="(min-width:480px)"
+                > 
                 <img src="./images/desk/slider-pic5_1.png" 
                 alt="jug of milk">
             </picture>
-            <div class="hero__content">
-                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <div class="hero__content-bio-eco">
+                <p class="hero__text-bio-eco">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <a href="">
                     <picture>
                         <source 
@@ -143,6 +148,11 @@
                 srcset="./images/mob/slider-pic7_1.png 1x,
                 ./images/mob/slider-pic7_1@2x.png 2x"
                 media="(min-width:480px)"
+                >
+                <source 
+                srcset="./images/mob/slider-pic7_1.png 1x,
+                ./images/mob/slider-pic7_1@2x.png 2x"
+                media="(min-width:320px)"
                 >
                 <img 
                 src="./images/desk/slider-pic7_1.png" 
