@@ -148,7 +148,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 20px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -1228,7 +1228,6 @@ body {
 }
 
 .advantages__text {
-  font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
