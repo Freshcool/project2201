@@ -1,6 +1,20 @@
 .footer {
   background-color: #fff5f6;
   padding-top: 113px;
+  @media screen and (min-width: 768px) {
+    padding-top: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 165px;
+  }
+}
+
+.footer__div {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer__link {
@@ -14,6 +28,23 @@
   width: 232px;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    width: 485px;
+  }
 }
 .second__text {
   font-family: Titan One;
@@ -27,6 +58,23 @@
   margin-top: 17px;
   display: flex;
   z-index: 6;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #d41443;
+    padding-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #d41443;
+    padding-bottom: 97px;
+  }
 }
 
 .footer__network--list {
@@ -34,10 +82,26 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 43px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
 }
 .footer__network--title {
   &:not(:last-child) {
     margin-right: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
   }
 }
 
@@ -60,8 +124,11 @@
   &:focus {
     background-color: #d41443;
     color: #d41443;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
   }
 }
 .footer__icon {
@@ -76,9 +143,27 @@
   &::after {
     position: absolute;
     content: '';
-    width: 100vw;
+    width: 100%;
     height: 67px;
     border-bottom: 1px solid #e1e1e1;
+  }
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 200px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 135px;
+      border-bottom: 1px solid #e1e1e1;
+    }
   }
 }
 .footer__contact--text {
@@ -88,6 +173,18 @@
   font-size: 12px;
   line-height: 1.83;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: right;
+    color: #000000;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
 }
 .footer__item--link {
   font-family: DM Sans;
@@ -97,6 +194,19 @@
   line-height: 1.83;
   text-align: right;
   color: #d41443;
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: right;
+    color: #d41443;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+    color: #d41443;
+  }
 }
 .footer__title--text {
   font-family: DM Sans;
@@ -113,5 +223,21 @@
   @media screen and (min-width: 480px) {
     width: 300px;
     height: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    color: #907e82;
+    padding-bottom: 35px;
+    padding-top: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    color: #907e82;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
