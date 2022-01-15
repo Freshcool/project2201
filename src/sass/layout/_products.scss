@@ -1,0 +1,262 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1208px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
+  &__label {
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 21px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @media screen and (min-width: 1208px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    font-size: 30px;
+    line-height: 34px;
+
+    text-transform: uppercase;
+    color: var(--second-title-color);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 144px;
+    font-family: Titan One;
+    font-size: 34px;
+    line-height: 39px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 150px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 66px;
+      letter-spacing: 0.06em;
+      margin-bottom: 259px;
+    }
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+  }
+  &__item {
+    width: 100%;
+    @media screen and (min-width: 320px) {
+      width: 280px;
+    }
+    height: 485px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: center;
+    display: block;
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      margin: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 329px;
+      height: 525px;
+    }
+  }
+
+  &__name {
+    position: relative;
+    padding-top: 161px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--third-title-color);
+  }
+  &__text {
+    // word-break: break-all;
+    overflow: hidden;
+    width: 200px;
+    @media screen and (min-width: 768px) {
+      width: 198px;
+      height: 124px;
+      line-height: 176%;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 241px;
+      height: 106px;
+      margin-bottom: 62px;
+      font-size: 16px;
+    }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--main-text-color);
+  }
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-background-button);
+    color: var(--main-color-text-button);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item-cream {
+    background: #ffb8ca;
+    margin-bottom: 144px;
+  }
+
+  &__item-coffee {
+    background: #f0d1a5;
+    margin-bottom: 144px;
+  }
+
+  &__item-milkshakes {
+    background: #c2e297;
+  }
+}
+
+.products__item-cream::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+
+  left: 50%;
+  transform: translate(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url('../images/mob/home-pic1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mob/home-pic1@2x.png');
+  }
+  position: absolute;
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -211px;
+    background-image: url('../images/desk/home-pic1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/home-pic1@2x.png');
+    }
+  }
+}
+.products__item-coffee::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+  left: 50%;
+  transform: translate(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url('../images/mob/home-pic2.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mob/home-pic2@2x.png');
+  }
+  position: absolute;
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -211px;
+    background-image: url('../images/desk/home-pic2.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/home-pic2@2x.png');
+    }
+  }
+}
+.products__item-milkshakes::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  top: -113px;
+  left: 50%;
+  transform: translate(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url('../images/mob/home-pic3.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mob/home-pic3@2x.png');
+  }
+  position: absolute;
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -211px;
+    background-image: url('../images/desk/home-pic3.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/home-pic3@2x.png');
+    }
+  }
+}
+
+.products__name::after {
+  content: '';
+  background-image: url('../images/ellipsis.svg');
+  display: block;
+  display: block;
+  margin: 30px auto;
+  width: 26px;
+  height: 6px;
+  @media screen and (min-width: 1280px) {
+    margin: 32px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .products__item-cream,
+  .products__item-coffee {
+    margin-bottom: 0;
+  }
+}
+
+.products__button:hover,
+.products__button:focus {
+  background-color: rgba(236, 236, 236, 0);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
