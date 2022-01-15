@@ -2,10 +2,10 @@
 .customer-section {
     padding: 0 20px;
     @media screen and (min-width: 768px) {
-        padding: 80px 74px 86px 74px;
+        padding: 80px 74px 0 74px;
     }
     @media screen and (min-width: 1280px) {
-        padding: 123px 177px 132px 177px;
+        padding: 123px 177px 0 177px;
     }
 }
 
