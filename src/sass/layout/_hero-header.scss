@@ -23,6 +23,9 @@
         width: 1280px;
     } 
 }
+.header__logo{
+    z-index: 2;
+}
 .nav{
     display: flex;  
 }
@@ -53,6 +56,7 @@
     color: var(--main-title-color);
 }
 .header__btn{
+    z-index: 2;
     @media screen and (max-width:767px) { 
         display: none;   
     }
