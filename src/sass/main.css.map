@@ -11,8 +11,9 @@
         "components/_container.scss",
         "components/_social-list.scss",
         "components/_mobile-menu.scss",
-        "layout/_hero-header.scss",
+        "layout/_hero-header.scss".
         "layout/_hero.scss",
+        "layout/_products.scss",
         "layout/_section-about.scss",
         "components/_customer-reviews.scss",
         "layout/_advantages.scss"
