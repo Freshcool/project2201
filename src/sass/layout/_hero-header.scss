@@ -50,6 +50,7 @@
         &:hover,
         &:focus{
             color: var(--main-title-color) ;
+            text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }       
 }
 .current {
@@ -63,6 +64,7 @@
     &:hover,
     &:focus{
         background: #ECEBEB ;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     } 
 }
 .header__icon--forward{
@@ -206,6 +208,7 @@
     &:hover,
     &:focus{
         background:#C7133E ;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     } 
 }
 .hero__btn--title-white{
@@ -225,6 +228,7 @@
     &:hover,
     &:focus{
         background:#ECEBEB ;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }    
 }
 .hero__link--title{
@@ -410,6 +414,14 @@
         font-size: 14px;
         line-height: 1.4;
         margin-bottom: 20px;
+    }
+}
+.hero__arrow-right{
+    fill: black;
+    &:hover,
+    &:focus{
+    background:#ECEBEB ;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 }
 .hero__pic7{
