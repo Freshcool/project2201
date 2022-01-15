@@ -1,21 +1,188 @@
-.slide__block {
-    padding: 20px 50px;
+
+.customer-section {
+    @media screen and (min-width: 768px) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 175px;
+        padding-right: 175px;
+    }
 }
 
-.slide__text {
+.swiper {
+    width: 280px;
+    height: 100%;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        width: 620px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 920px;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        width: 920px;
+    }
+}
+
+
+.swiper-slide__container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 620px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 920px;
+    }
+}
+
+.swiper-slide__block {
+    position: relative;
+    width: 280px;
+    padding: 43px 50px 26px 50px;
     background-color: #FAFAFA;
+    p {
+        display: inline;
+        background: repeating-linear-gradient(to top, #E1E1E1, #E1E1E1);
+        background-repeat: no-repeat;
+        background-position: center bottom 1px;
+        background-size: 100% 1px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        padding: 40px 64px 41px 96px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 920px;
+        padding: 47px 89px 39px 87px;
+    }
+}
+
+
+.swiper-slide__block::before {
+    content: "";
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/customerpng.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 40px;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+        top: 22px;
+        left: 67px;
+    }
+}
+
+.swiper-slide__text {
+    position: relative;
     font-weight: 500;
-font-size: 12px;
-line-height: 30.6;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    color: #000000;
+    z-index: 2;
+}
+
+.swiper-slide__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 89px;
+    margin-top: 30px;
+}
+
+.point {
+    position: relative;
+    background-color: #C7133E;
+    border-radius: 5px;
+    font-size: 0;
+
+    padding: 2px;
+    &::before {
+        position: absolute;
+        left: -54px;
+        content: '';
+        top: 0;
+        background-color: #C7133E;
+        border-radius: 5px;
+        font-size: 0;  
+        margin-left: 35px;
+    
+        padding: 2px;
+    }
+    &::after {
+        position: absolute;
+        left: -17px;
+        content: '';
+        background-color: #C7133E;
+        border-radius: 5px;
+        font-size: 0;  
+        margin-left: 35px;
+        top: 0;
+    
+        padding: 2px;
+    }
+}
+
+.point-set {
+    margin-top: 18px;
+}
+
+.swiper-slide__text-container {
+    display: block;
+    margin-top: 18px;
+}
+
+.swiper-slide__second-text {
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.85;
 text-align: center;
 color: #000000;
 }
 
-.slide__text::before {
-    content: "";
-    width: 54px;
-    height: 40px;
+.swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -1px;
 }
+
+.swiper-pagination-bullet-active {
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-color: var(--main-background);
+    border-radius: unset;
+    width: 13px;
+    height: 12px;
+}
+
 
 
     
