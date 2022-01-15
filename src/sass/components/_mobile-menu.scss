@@ -32,6 +32,7 @@
 }
 .menu-container__btn-buy{
     justify-content: center;
+    margin-bottom: 32px;
     &:hover,
     &:focus{
         background: #ECEBEB ;
@@ -41,8 +42,7 @@
     margin-left: 12px;
 }
 .menu-container__item{
-    margin-top: 23px;
-    
+    margin-bottom: 23px;
 }
 .menu-container__link {
     font-weight:700;
@@ -57,8 +57,19 @@
     &:hover,
     &:focus{
         color: var(--main-title-color) ;
-    }  
+    } 
 }
+.menu-container__link::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: wheat; 
+}
+
+
 .current{
     color: var(--main-title-color);
 }
