@@ -30,6 +30,7 @@
     right: 28px;
 }
 .menu-container__btn-buy{
+    margin-bottom: 32px;
     justify-content: center;
     &:hover,
     &:focus{
@@ -40,8 +41,7 @@
     margin-left: 12px;
 }
 .menu-container__item{
-    margin-top: 23px;
-    
+    margin-bottom: 23px;   
 }
 .menu-container__link {
     font-weight:700;
