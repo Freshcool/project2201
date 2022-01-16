@@ -1007,8 +1007,6 @@ body {
   font-family: Titan One;
   font-size: 18px;
   line-height: 21px;
-  font-size: 30px;
-  line-height: 34px;
   text-transform: uppercase;
   color: var(--second-title-color);
   text-align: center;
@@ -1156,12 +1154,12 @@ body {
 
 .products__item-cream {
   background: #ffb8ca;
-  margin-bottom: 144px;
+  margin-bottom: 130px;
 }
 
 .products__item-coffee {
   background: #f0d1a5;
-  margin-bottom: 144px;
+  margin-bottom: 130px;
 }
 
 .products__item-milkshakes {
@@ -1333,8 +1331,7 @@ body {
   }
 }
 
-.products__button:hover,
-.products__button:focus {
+.products__button:hover {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   background-color: rgba(2, 2, 2, 0);
@@ -1347,8 +1344,8 @@ body {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1356,11 +1353,104 @@ body {
 .products__item-cream:hover::before,
 .products__item-coffee:hover::before,
 .products__item-milkshakes:hover::before {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
   background-color: rgba(2, 2, 2, 0);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-cream {
+  color: white;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: #ffb8ca;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-coffee {
+  color: white;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: #f0d1a5;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-milkshakes {
+  color: white;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: #c2e297;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-cream::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: #ffb8ca;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+}
+
+@media screen and (min-width: 1280px) {
+  .products__button.is-cream::before {
+    height: 250px;
+    top: -105px;
+  }
+}
+
+.products__button.is-coffee::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: #f0d1a5;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+}
+
+@media screen and (min-width: 1280px) {
+  .products__button.is-coffee::before {
+    height: 250px;
+    top: -105px;
+  }
+}
+
+.products__button.is-milkshakes::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: #c2e297;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+}
+
+@media screen and (min-width: 1280px) {
+  .products__button.is-milkshakes::before {
+    height: 250px;
+    top: -105px;
+  }
 }
 
 .section-about {
@@ -1969,7 +2059,6 @@ body {
   font-size: 12px;
   line-height: 1.66;
   color: var(--second-text-color);
-  margin-bottom: 38px;
   max-width: 230px;
   height: 36px;
 }
@@ -2200,6 +2289,37 @@ body {
   .contacts-list__text {
     font-size: 16px;
     line-height: 1.88;
+  }
+}
+
+.contacts-list__text-bold {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list__text-bold {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1280) {
+  .contacts-list__text-bold {
+    font-size: 14px;
+    line-height: 1.88;
+  }
+}
+
+.contacts-list__text-bold {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts-list__text-bold {
+    margin-bottom: 14px;
   }
 }
 
@@ -2462,6 +2582,29 @@ body {
   background-color: #ecebeb;
 }
 
+.map {
+  width: 280px;
+  height: 250px;
+}
+
+@media screen and (min-width: 480px) {
+  .map {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .map {
+    width: 1050px;
+  }
+}
+
 .gallery-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2476,16 +2619,6 @@ body {
 
 .gallery-wrapper img:not(:last-child) {
   margin-bottom: 8px;
-}
-
-.gallery-wrapper::before {
-  content: '';
-  width: 100%;
-  height: 171px;
-  left: 0;
-  top: 0;
-  background-color: #fff5f6;
-  position: absolute;
 }
 
 .gallery-wrapper li:not(:last-child) {
@@ -2513,7 +2646,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .gallery-wrapper-list {
-    max-width: 287px;
+    max-width: 285px;
     height: 100%;
   }
 }
