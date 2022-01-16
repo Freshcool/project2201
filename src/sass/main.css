@@ -1271,6 +1271,14 @@ body {
   position: absolute;
 }
 
+@media screen and (min-width: 768px) {
+  .products__item-milkshakes::before {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__item-milkshakes::before {
     background-image: url("../images/mob/home-pic3@2x.png");
@@ -1327,7 +1335,30 @@ body {
 
 .products__button:hover,
 .products__button:focus {
-  background-color: rgba(236, 236, 236, 0);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  background-color: rgba(2, 2, 2, 0);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__item:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__item-cream:hover::before,
+.products__item-coffee:hover::before,
+.products__item-milkshakes:hover::before {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  background-color: rgba(2, 2, 2, 0);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
