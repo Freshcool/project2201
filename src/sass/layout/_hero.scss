@@ -163,6 +163,7 @@
     z-index: 1;
     left: 36px;
     bottom: 75px;
+    overflow:hidden;
     @media screen and (min-width:480px) {
         left: 132px; 
     }
