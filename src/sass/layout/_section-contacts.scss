@@ -84,7 +84,8 @@
     line-height: 1.88;
   }
 }
-.contacts-list__text-bold {
+.contacts-list__text-bold,
+.contacts-list__text--bold {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -110,15 +111,6 @@
     margin-bottom: 14px;
   }
 }
-.contacts-list__text--time {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 2px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 5px;
-  }
-}
-
 .contacts-list__text.contacts-list__text--place {
   color: var(--main-text-color);
   text-transform: uppercase;
@@ -156,8 +148,18 @@
     width: 138px;
   }
 }
-
-.contacts-list__text--time {
+.contacts-list__position:not(:last-child) {
+  @media screen and (min-width: 380px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+.contacts-list__text-time {
   color: var(--fourth-text-color);
   text-transform: uppercase;
 }
