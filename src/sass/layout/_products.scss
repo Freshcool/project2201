@@ -259,8 +259,7 @@
   }
 }
 
-.products__button:hover,
-.products__button:focus {
+.products__button:hover {
   transition-duration: 250ms;
   background-color: rgba(2, 2, 2, 0);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -270,14 +269,87 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   // transform: translateY(-60%);
   transition-property: all;
-  transition-duration: 300ms;
+  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .products__item-cream:hover::before,
-// .products__item-coffee:hover::before,
-// .products__item-milkshakes:hover::before {
-//   transition-duration: 250ms;
-//   background-color: rgba(2, 2, 2, 0);
-//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-// }
+.products__item-cream:hover::before,
+.products__item-coffee:hover::before,
+.products__item-milkshakes:hover::before {
+  transition-duration: 2000ms;
+  background-color: rgba(2, 2, 2, 0);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-cream {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #ffb8ca;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__button.is-coffee {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #f0d1a5;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__button.is-milkshakes {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #c2e297;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.products__button.is-cream::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  @media screen and (min-width: 1280px) {
+    height: 250px;
+    top: -105px;
+  }
+  background-color: #ffb8ca;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.products__button.is-coffee::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  @media screen and (min-width: 1280px) {
+    height: 250px;
+    top: -105px;
+  }
+  background-color: #f0d1a5;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.products__button.is-milkshakes::before {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  display: block;
+  content: '';
+  width: 200px;
+  height: 200px;
+  @media screen and (min-width: 1280px) {
+    height: 250px;
+    top: -105px;
+  }
+  background-color: #c2e297;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
