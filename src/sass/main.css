@@ -231,7 +231,7 @@ body {
   width: 250px;
   height: 100vh;
   background-color: var(--background-mob-menu);
-  padding: 60px 21px;
+  padding-top: 60px;
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,8 +240,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -254,8 +252,6 @@ body {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-menu-btn {
@@ -268,41 +264,33 @@ body {
 
 .menu-container__btn-buy {
   margin-bottom: 32px;
+  margin-left: 21px;
+  margin-right: 21px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.menu-container__btn-buy:hover, .menu-container__btn-buy:focus {
-  background: #ECEBEB;
-}
-
-.icon-forward {
-  margin-left: 12px;
-}
-
-.menu-container__item {
-  margin-bottom: 23px;
-}
-
 .menu-container__link {
+  display: block;
+  border-bottom: 1px solid #E18298;
+  padding: 11px 21px;
+  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1,3px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .menu-container__link {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-.menu-container__link:hover, .menu-container__link:focus {
-  color: var(--main-title-color);
+.menu-container__item:first-child {
+  border-top: 1px solid #E18298;
 }
 
 .current {
@@ -1354,16 +1342,6 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products__item-cream:hover::before,
-.products__item-coffee:hover::before,
-.products__item-milkshakes:hover::before {
-  -webkit-transition-duration: 3000ms;
-          transition-duration: 3000ms;
-  background-color: rgba(2, 2, 2, 0);
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 .products__button.is-cream {
   color: white;
   -webkit-transform: rotate(-90deg);
@@ -1817,6 +1795,7 @@ body {
   background-color: rgba(255, 165, 186, 0.5);
   width: 100%;
   height: 100%;
+  z-index: 10;
 }
 
 .section-about__backdrop.visually-hidden {
@@ -1929,6 +1908,12 @@ body {
 
 .customer-section {
   padding: 0 20px 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .customer-section {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2878,8 +2863,8 @@ body {
 }
 
 .images-wrapper {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(55%, #ffffff), color-stop(10.7%, #fff5f6));
-  background: linear-gradient(to top, #ffffff 55%, #fff5f6 10.7%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffffff), color-stop(10.7%, #fff5f6));
+  background: linear-gradient(to top, #ffffff 45%, #fff5f6 10.7%);
   padding-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
