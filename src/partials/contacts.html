@@ -1,22 +1,22 @@
 <section class="contacts">
-    <h2 class="visually-hidden">Contacts</h2>
+    <h2 id="contact" class="visually-hidden">Contacts</h2>
     <div class="container">
         <ul class="contacts-list">
             <li class="contacts-list__card">
                 <p class="contacts-list__text contacts-list__text--place contacts-list__text--place-first">Cafe</p>
-                <p class="contacts-list__text">Chicago</p>
+                <p class="contacts-list__text-bold">Chicago</p>
                 <p class="contacts-list__text--description">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
                 </p>
                 <div class="contacts-list__item--first">
                     <ul>
-                    <li>
-                    <p class="contacts-list__text">Monday - Friday</p>
-                    <p class="contacts-list__text contacts-list__text--time">06:00 AM - 10:00 PM</p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Monday - Friday</p>
+                    <p class="contacts-list__text contacts-list__text-time">06:00 AM - 10:00 PM</p>
                     </li>
-                    <li>
-                    <p class="contacts-list__text">Saturday - Sunday</p>
-                    <p class="contacts-list__text contacts-list__text--time">08:00 AM - 16:00 PM</p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Saturday - Sunday</p>
+                    <p class="contacts-list__text contacts-list__text-time">08:00 AM - 16:00 PM</p>
                     </li>
                     </ul>
                 </div>
@@ -31,19 +31,19 @@
             </li>
             <li class="contacts-list__card">
                 <p class="contacts-list__text contacts-list__text--place contacts-list__text--place-second">Foodtruck</p>
-                <p class="contacts-list__text">Los Angeles</p>
+                <p class="contacts-list__text-bold">Los Angeles</p>
                 <p class="contacts-list__text--description">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
                 </p>
                 <div class="contacts-list__item--first">
                     <ul>
-                    <li>
-                    <p class="contacts-list__text">Monday - Friday</p>
-                    <p class="contacts-list__text contacts-list__text--time">06:00 AM - 10:00 PM</p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Monday - Friday</p>
+                    <p class="contacts-list__text contacts-list__text-time">06:00 AM - 10:00 PM</p>
                     </li>
-                    <li>
-                    <p class="contacts-list__text">Saturday - Sunday</p>
-                    <p class="contacts-list__text contacts-list__text--time">08:00 AM - 16:00 PM</p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Saturday - Sunday</p>
+                    <p class="contacts-list__text contacts-list__text-time">08:00 AM - 16:00 PM</p>
                     </li>
                     </ul>
                 </div>
@@ -58,20 +58,19 @@
             </li>
             <li class="contacts-list__card">
                 <p class="contacts-list__text contacts-list__text--place contacts-list__text--place-first">Cafe</p>
-                <p class="contacts-list__text">New York</p>
+                <p class="contacts-list__text-bold">New York</p>
                 <p  class="contacts-list__text--description">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
                 </p>
                 <div class="contacts-list__item--first">
                     <ul>
-                    <li>
-                    <p class="contacts-list__text">Monday - Friday</p>
-                    <p class="contacts-list__text contacts-list__text--time">06:00 AM - 10:00 PM</p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Monday - Friday</p>
+                    <p class="contacts-list__text contacts-list__text-time">06:00 AM - 10:00 PM</p>
                     </li>
-                    <li>
-                    <p class="contacts-list__text">Saturday - Sunday</p>    
-                    <p class="contacts-list__text contacts-list__text--time">08:00 AM - 16:00 PM</p>
-                    </p>
+                    <li class="contacts-list__position">
+                    <p class="contacts-list__text--bold">Saturday - Sunday</p>    
+                    <p class="contacts-list__text contacts-list__text-time">08:00 AM - 16:00 PM</p>
                     </li>
                     </ul>
                 </div>
@@ -85,14 +84,26 @@
                 </div>
             </li>
         </ul>
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774205.3210519562!2d-74.57368223437504!3d40.71274309999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2z0JLRgdC10YHQstGW0YLQvdGW0Lkg0YLQvtGA0LPQvtCy0LjQuSDRhtC10L3RgtGAIDE!5e0!3m2!1suk!2sua!4v1642371624221!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" data-modal
+                class="visually-hidden map"></iframe>
+        </div>
         <div class="contacts-buttons">
-            <button type="button" class="btn btn_color_dark btn_color_dark--contacts">
-                Our Locations >
+            <button type="button" class="btn btn_color_dark btn_color_dark--contacts" data-modal-open>
+                Our Locations
+                <svg class="btn__svg--contacts" width="3.61" height="8">
+                    <use href="./images/icons.svg#icon-btn-w"></use>
+                </svg>
             </button>
             <button type="button" class="btn btn_color_light btn_color_light--contacts">
-                Franchise >
+                Franchise
+                <svg class="btn__svg--contacts" width="4.28" height="8">
+                    <use href="./images/icons.svg#icon-btn"></use>
+                </svg>
             </button>
         </div>
         </div>
-    </div>
 </section>
+
