@@ -2,8 +2,8 @@
 <section class="section-about">
     <div class="section-about__background">
         <div class="container">
-            <p class="section-about__pre-title">TRADITION AND LOVE</p>
-            <h2 class="section-about__title" id="how_it’s_made?">HOW IT'S MADE?</h2>
+            <p class="section-about__pre-title" id="how_it’s_made?">TRADITION AND LOVE</p>
+            <h2 class="section-about__title">HOW IT'S MADE?</h2>
             <div class="section-about__position">
                 <div class="section-about__picture">
                     <picture>
@@ -39,7 +39,29 @@
                                     <p class="section-about__list section-about__list--position">Aliquam erat volutpat. Aenean accumsan.</p>
                                 </li>
                             </ul>
-                            <button class="section-about__button" type="button">Read more<svg class="section-about__icon" width="9" height="18"><use href="./images/icons.svg#icon-read-more"></use></svg></button>
+                            <div class="section-about__button--position">
+                                <button class="section-about__button" type="button" data-modal-open>Read more<svg class="section-about__icon" width="9" height="18"> <use href="./images/icons.svg#icon-read-more"></use> </svg></button>
+                            </div>
+                            
+                            <div class="section-about__backdrop visually-hidden" data-modal>
+                                <div class="section-about__modal">
+                                    <h4 class="section-about__pre-title--modal">Created by team<br>=PROJECT22=</h4>
+                                    <ul class="section-about__title--modal">
+                                        <li>Anna Zaluzhnaya</li>
+                                        <li>Dmitriy Khomenko</li>
+                                        <li>Ivan Filipov</li>
+                                        <li>Mariia Kalius</li>
+                                        <li>Oleg Vorona</li>
+                                        <li>Dmitriy Voznyuk</li>
+                                        <li>Yuriy Brovko</li>
+                                        <li>Evgeniy Feshenko</li>
+                                    </ul>
+                                    <div class="section-about__button-modal--position">
+                                        <button class="section-about__button-modal" data-modal-close>close</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                     </div>
             </div>
         </div>
