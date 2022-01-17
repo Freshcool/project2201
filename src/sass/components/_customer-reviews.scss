@@ -1,8 +1,8 @@
 
 .customer-section {
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     @media screen and (min-width: 768px) {
-        padding: 52px 74px 0 74px;
+        padding: 0 74px 0 74px;
     }
     @media screen and (min-width: 1280px) {
         padding-top: 123px;
@@ -94,18 +94,6 @@
         left: 67px;
     }
 }
-
-/* .swiper-slide__text-block {
-    background-image: repeating-linear-gradient(
-  0deg,
-  transparent,
-  transparent 29px,
-  rgba(238, 17, 17, 0.5) 29px,
-  rgba(236, 16, 16, 0.5) 30px
-);
-background-size: 42px 42px;
-width: 180px;
-} */
 
 .swiper-slide__text {
     position: relative;
