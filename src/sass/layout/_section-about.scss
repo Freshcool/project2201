@@ -123,6 +123,7 @@
   font-size: 12px;
   line-height: 1.58;
   padding-bottom: 20px;
+  color: var(--third-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;
     letter-spacing: 0.04em;
@@ -132,7 +133,6 @@
     line-height: 1.92;
   }
 
-  color: var(--third-text-color);
   @media screen and (max-width: 767px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -186,6 +186,7 @@
   background: var(--main-text-color);
   border-radius: 22px;
   color: var(--main-color-text-button);
+
   @media screen and (max-width: 767px) {
     margin-left: 30px;
   }
@@ -193,13 +194,116 @@
     font-size: 16px;
     line-height: 1.14;
   }
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 }
 
 .section-about__icon {
   margin-left: 15px;
 }
-.section-about__button:hover,
-.section-about__button:focus {
-  background: #ecebeb;
+
+.section-about__button--position {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 39px;
+  }
+}
+
+.section-about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 165, 186, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.section-about__backdrop.visually-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.section-about__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-image: url('../images/mob/background-milk-mobile1x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  height: 400px;
+  width: 100%;
+  background-color: var(--second-background);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10%;
+  @media screen and (min-width: 480px) {
+    width: 500px;
+    height: 600px;
+  }
+}
+
+.section-about__pre-title--modal {
+  font-family: Titan One;
+  color: var(--second-title-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  @media screen and (min-width: 480px) {
+    font-size: 35px;
+    line-height: 1.14;
+  }
+}
+.section-about__title--modal {
+  font-family: Titan One;
+  color: var(--third-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 40px;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 480px) {
+    font-size: 33px;
+    line-height: 1.14;
+    padding: 60px;
+  }
+}
+
+.section-about__button-modal {
+  font-family: DM Sans;
+  width: 176px;
+  height: 44px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--second-title-color);
+  border-radius: 22px;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: var(--third-text-color);
+  }
+
+  &--position {
+    display: flex;
+    justify-content: center;
+  }
 }
