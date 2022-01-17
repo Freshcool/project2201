@@ -5,45 +5,40 @@
     padding-top: 122px;
     padding-bottom: 112px;
   }
-  @media screen and (min-width: 1208px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 127px;
     padding-bottom: 119px;
   }
-
   &__label {
     margin-bottom: 15px;
     font-family: Titan One;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
     @media screen and (min-width: 768px) {
       font-size: 26px;
-      line-height: 30px;
+      line-height: 1.15;
     }
     @media screen and (min-width: 1280px) {
       font-size: 30px;
-      line-height: 34px;
+      line-height: 1.13;
     }
-    font-size: 30px;
-    line-height: 34px;
-
     text-transform: uppercase;
     color: var(--second-title-color);
     text-align: center;
   }
-
   &__title {
     margin-bottom: 144px;
     font-family: Titan One;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.15;
     @media screen and (min-width: 768px) {
       font-size: 48px;
-      line-height: 55px;
+      line-height: 1.14;
       margin-bottom: 150px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 58px;
-      line-height: 66px;
+      line-height: 1.14;
       letter-spacing: 0.06em;
       margin-bottom: 259px;
     }
@@ -73,7 +68,6 @@
       height: 525px;
     }
   }
-
   &__name {
     position: relative;
     padding-top: 161px;
@@ -81,10 +75,10 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     @media screen and (min-width: 1280px) {
       font-size: 30px;
-      line-height: 34px;
+      line-height: 1.13;
     }
     text-align: center;
     letter-spacing: 0.04em;
@@ -92,7 +86,6 @@
     color: var(--third-title-color);
   }
   &__text {
-    // word-break: break-all;
     overflow: hidden;
     width: 200px;
     @media screen and (min-width: 768px) {
@@ -101,17 +94,15 @@
       line-height: 176%;
     }
     @media screen and (min-width: 1280px) {
+      margin-bottom: 62px;
       width: 241px;
       height: 106px;
-      margin-bottom: 62px;
       font-size: 16px;
     }
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
@@ -130,19 +121,16 @@
   }
   &__item-cream {
     background: #ffb8ca;
-    margin-bottom: 144px;
+    margin-bottom: 130px;
   }
-
   &__item-coffee {
     background: #f0d1a5;
-    margin-bottom: 144px;
+    margin-bottom: 130px;
   }
-
   &__item-milkshakes {
     background: #c2e297;
   }
 }
-
 .products__item-cream::before {
   content: '';
   width: 249px;
@@ -153,7 +141,6 @@
     height: 226px;
     top: -105px;
   }
-
   left: 50%;
   transform: translate(-50%);
   background-repeat: no-repeat;
@@ -194,7 +181,6 @@
     background-image: url('../images/mob/home-pic2@2x.png');
   }
   position: absolute;
-
   @media screen and (min-width: 1280px) {
     width: 335px;
     height: 335px;
@@ -210,6 +196,11 @@
   width: 249px;
   height: 252px;
   top: -113px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
   left: 50%;
   transform: translate(-50%);
   background-repeat: no-repeat;
@@ -230,7 +221,6 @@
     }
   }
 }
-
 .products__name::after {
   content: '';
   background-image: url('../images/ellipsis.svg');
@@ -254,9 +244,144 @@
     margin-bottom: 0;
   }
 }
-
-.products__button:hover,
-.products__button:focus {
-  background-color: rgba(236, 236, 236, 0);
+.products__button:hover {
+  transition-duration: 250ms;
+  background-color: rgba(2, 2, 2, 0);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__item:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+// .products__item-cream:hover::before,
+// .products__item-coffee:hover::before,
+// .products__item-milkshakes:hover::before {
+//   transition-duration: 3000ms;
+//   background-color: rgba(2, 2, 2, 0);
+//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
+.products__button.is-cream {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #ffb8ca;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__button.is-coffee {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #f0d1a5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__button.is-milkshakes {
+  color: rgb(255, 255, 255);
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background-color: #c2e297;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.products__button.is-cream::before {
+  content: 'This strawberry ice cream in a crispy waffle cup is seasoned with mint ';
+  position: absolute;
+  display: block;
+  transform: rotate(90deg);
+  top: -64px;
+  left: 50px;
+  padding: 20px;
+  width: 208px;
+  height: 168px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    width: 178px;
+    height: 178px;
+    top: -69px;
+    left: 60px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 256px;
+    top: -67px;
+    left: 30px;
+    font-size: 16px;
+  }
+  background-color: #ffb8ca;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.products__button.is-coffee::before {
+  content: 'Coffee with ice - this is exactly what you need in hot weather, quenches thirst and invigorates';
+  position: absolute;
+  display: block;
+  transform: rotate(90deg);
+  top: -64px;
+  left: 50px;
+  padding: 20px;
+  width: 208px;
+  height: 168px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    width: 178px;
+    height: 178px;
+    top: -69px;
+    left: 60px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 256px;
+    top: -67px;
+    left: 30px;
+    font-size: 16px;
+  }
+  background-color: #f0d1a5;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.products__button.is-milkshakes::before {
+  content: 'Chocolate milkshake tastes great for children and adults';
+  position: absolute;
+  display: block;
+  transform: rotate(90deg);
+  top: -64px;
+  left: 50px;
+  padding: 20px;
+  width: 208px;
+  height: 168px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    width: 178px;
+    height: 178px;
+    top: -69px;
+    left: 60px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 256px;
+    top: -67px;
+    left: 30px;
+    font-size: 16px;
+  }
+  background-color: #c2e297;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
