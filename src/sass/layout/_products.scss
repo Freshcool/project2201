@@ -255,13 +255,13 @@
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.products__item-cream:hover::before,
-.products__item-coffee:hover::before,
-.products__item-milkshakes:hover::before {
-  transition-duration: 3000ms;
-  background-color: rgba(2, 2, 2, 0);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+// .products__item-cream:hover::before,
+// .products__item-coffee:hover::before,
+// .products__item-milkshakes:hover::before {
+//   transition-duration: 3000ms;
+//   background-color: rgba(2, 2, 2, 0);
+//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
 .products__button.is-cream {
   color: rgb(255, 255, 255);
   transform: rotate(-90deg);
