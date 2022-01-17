@@ -248,6 +248,7 @@ body {
   }
 }
 
+
 .menu-container {
     position: absolute;
     top: 0;
@@ -281,10 +282,12 @@ body {
   margin-bottom: 32px;
   margin-left: 21px;
   margin-bottom: 32px;
+  margin-right: 21px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 
 
 .menu-container__btn-buy:hover, .menu-container__btn-buy:focus {
@@ -1368,16 +1371,6 @@ body {
           transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.products__item-cream:hover::before,
-.products__item-coffee:hover::before,
-.products__item-milkshakes:hover::before {
-  -webkit-transition-duration: 3000ms;
-          transition-duration: 3000ms;
-  background-color: rgba(2, 2, 2, 0);
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .products__button.is-cream {
@@ -2905,8 +2898,8 @@ body {
 }
 
 .images-wrapper {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(55%, #ffffff), color-stop(10.7%, #fff5f6));
-  background: linear-gradient(to top, #ffffff 55%, #fff5f6 10.7%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffffff), color-stop(10.7%, #fff5f6));
+  background: linear-gradient(to top, #ffffff 45%, #fff5f6 10.7%);
   padding-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
