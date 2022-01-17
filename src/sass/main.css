@@ -248,10 +248,26 @@ body {
   }
 }
 
-.menu-container.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:250px;
+    height: 100vh;
+    background-color: var(--background-mob-menu);
+    padding-top: 60px;
+    z-index:20;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:768px) {
+        width:40%; 
+    }
+    &.is-hidden{
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;   
+    }
 }
 
 .close-menu-btn {
@@ -265,10 +281,25 @@ body {
 .menu-container__btn-buy {
   margin-bottom: 32px;
   margin-left: 21px;
+  margin-bottom: 32px;
   margin-right: 21px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+
+
+.menu-container__btn-buy:hover, .menu-container__btn-buy:focus {
+  background: #ECEBEB;
+}
+
+.icon-forward {
+  margin-left: 12px;
+}
+
+.menu-container__item {
+  margin-bottom: 23px;
 }
 
 .menu-container__link {
@@ -1782,6 +1813,9 @@ body {
   margin-left: 15px;
 }
 
+.section-about__button:hover,
+.section-about__button:focus {
+
 @media screen and (max-width: 767px) {
   .section-about__button--position {
     padding-bottom: 39px;
@@ -2840,6 +2874,7 @@ body {
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .map {
     width: 700px;
@@ -2932,6 +2967,34 @@ body {
     padding-bottom: 121px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .images-wrapper-list {
+    max-width: 287px;
+    height: 100%;
+    padding-bottom: 80px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffffff), color-stop(10.7%, #fff5f6));
+    background: linear-gradient(to top, #ffffff 45%, #fff5f6 10.7%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .images-wrapper-list {
+    max-width: 620px;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffffff), color-stop(10.7%, #fff5f6));
+    background: linear-gradient(to top, #ffffff 45%, #fff5f6 10.7%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .images-wrapper-list {
+    width: auto;
+    height: 100%;
+    padding-bottom: 121px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #ffffff), color-stop(10.7%, #fff5f6));
+    background: linear-gradient(to top, #ffffff 45%, #fff5f6 10.7%);
+  }
 
 @media screen and (max-width: 1199px) {
   .images-wrapper-list {
