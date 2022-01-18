@@ -1,67 +1,69 @@
 <!-- == HEADER == -->
 <header class="header">
-    <div class="header__container">
-        <a href="/" class="link header__logo">
-            <img src="./images/logo-min.png" alt="icecream"> 
-        </a>
-        <nav class="nav">
-            <ul class="list nav__list">
-                <li class="nav__item">
-                    <a class="link nav__link current"  href="#home">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a class="link nav__link" href="#about_us">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a class="link nav__link" href="#how_it’s_made?">How it’s made?</a>
-                </li>
-                <li class="nav__item">
-                    <a class="link nav__link" href="#our_products">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a class="link nav__link" href="#contact">Contact</a>
-                </li>
-            </ul> 
-            <button type="button" class="open-menu-btn">
-                <svg class="btn-open" width="20" height="20">
-                <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
-            </button>
-            <button type="button" class="btn--big header__btn">Buy now
-                <svg class="header__icon--forward" width="6" height="8">
-                <use href="./images/icons.svg#icon-forward"></use>
-                </svg>
-            </button>  
-        </nav>
-    </div> 
-        <!-- == MOBILE-MENU == -->
-    <div class="menu-container is-hidden">
-        <button type="button" class="close-menu-btn">
-            <svg class="btn-close" width="14" height="14">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <button type="button" class="btn--big menu-container__btn-buy ">Buy now
-            <svg class="icon-forward" width="6" height="8">
-            <use href="./images/icons.svg#icon-forward"></use>
+  <div class="header__container">
+    <a href="#" class="link header__logo">
+      <img src="./images/logo-min.png" alt="icecream" />
+    </a>
+    <nav class="nav">
+      <ul class="list nav__list">
+        <li class="nav__item">
+          <a class="link nav__link current" href="#home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" href="#about_us">About us</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" href="#howmade">How it's made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" href="#our_products">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="open-menu-btn">
+        <svg class="btn-open" width="20" height="20">
+          <use href="./images/icons.svg#icon-burger"></use>
         </svg>
-        </button>
-        <ul class="list menu-container__mobile-menu">
-            <li class="menu-container__item">
-                <a class="link menu-container__link current"  href="#home">Home</a>
-            </li>
-            <li class="menu-container__item">
-                <a class="link menu-container__link" href="#about_us">About us</a>
-            </li>
-            <li class="menu-container__item">
-                <a class="link menu-container__link" href="#how_it’s_made?">How it’s made?</a>
-            </li>
-            <li class="menu-container__item">
-                <a class="link menu-container__link" href="#our_products">Our products</a>
-            </li>
-            <li class="menu-container__item">
-                <a class="link menu-container__link" href="#contact">Contact</a>
-            </li>
-        </ul>             
-    </div> 
+      </button>
+      <button type="button" class="btn--big header__btn">
+        Buy now
+        <svg class="header__icon--forward" width="6" height="8">
+          <use href="./images/icons.svg#icon-forward"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+  <!-- == MOBILE-MENU == -->
+  <div class="menu-container is-hidden">
+    <button type="button" class="close-menu-btn">
+      <svg class="btn-close" width="14" height="14">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="btn--big menu-container__btn-buy">
+      Buy now
+      <svg class="icon-forward" width="6" height="8">
+        <use href="./images/icons.svg#icon-forward"></use>
+      </svg>
+    </button>
+    <ul class="list menu-container__mobile-menu">
+      <li class="menu-container__item">
+        <a class="link menu-container__link current" href="#home" close-home>Home</a>
+      </li>
+      <li class="menu-container__item">
+        <a class="link menu-container__link" href="#about_us" close-about>About us</a>
+      </li>
+      <li class="menu-container__item">
+        <a class="link menu-container__link" href="#howmade" close-how>How it's made?</a>
+      </li>
+      <li class="menu-container__item">
+        <a class="link menu-container__link" href="#our_products" close-products>Our products</a>
+      </li>
+      <li class="menu-container__item">
+        <a class="link menu-container__link" href="#contact" close-contact>Contact</a>
+      </li>
+    </ul>
+  </div>
 </header>
