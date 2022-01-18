@@ -277,7 +277,8 @@
   transition: background-color 300ms ease-in-out;
   &:hover,
   &:focus {
-    background-color: #f03564;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: var(#d41443);
   }
 }
 
@@ -287,6 +288,7 @@
   transition: background-color 300ms ease-in-out;
   &:hover,
   &:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: #ecebeb;
   }
 }
