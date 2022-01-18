@@ -1535,7 +1535,7 @@ body {
 .section-about__background {
   background-image: url("../images/mob/background-milk-mobile1x.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: 89% 89%;
 }
 
@@ -1808,11 +1808,11 @@ body {
   background-color: rgba(255, 165, 186, 0.5);
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .section-about__backdrop.visually-hidden {
-  opacity: 0;
+  display: none;
   pointer-events: none;
 }
 
