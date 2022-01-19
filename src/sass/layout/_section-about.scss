@@ -237,10 +237,13 @@
   width: 100%;
   height: 100%;
   z-index: 20;
+
+  opacity: 1;
+  transition: opacity 500ms linear;
 }
 
 .section-about__backdrop.visually-hidden {
-  display: none;
+  opacity: 0;
   pointer-events: none;
 }
 
