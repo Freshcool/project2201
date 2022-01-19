@@ -2,11 +2,11 @@
   const refs = {
     openMenuBtn: document.querySelector('.open-menu-btn'),
     closeMenuBtn: document.querySelector('.close-menu-btn'),
-    closeMenuHome: document.querySelector('[close-home]'),
-    closeMenuAbout: document.querySelector('[close-about]'),
-    closeMenuHow: document.querySelector('[close-how]'),
-    closeMenuProducts: document.querySelector('[close-Products]'),
-    closeMenuContact: document.querySelector('[close-contact]'),
+    closeMenuHome: document.querySelector('.close-home'),
+    closeMenuAbout: document.querySelector('.close-about'),
+    closeMenuHow: document.querySelector('.close-how'),
+    closeMenuProducts: document.querySelector('.close-products'),
+    closeMenuContact: document.querySelector('.close-contact'),
     menu: document.querySelector('.menu-container'),
   };
 
