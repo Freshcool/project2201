@@ -10,7 +10,7 @@
         height: 264px;
         background-image: linear-gradient(to bottom, #fff5f6 37%, #ffffff 37%);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         
         min-width: 1280px;
         height: 448px;
@@ -29,12 +29,12 @@
     position: relative;
     top: 34px;
     max-width: 39px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         position: relative;
         top: 73px;
         max-width: 87px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: 120px;
         max-width: 280px;
     }
@@ -46,12 +46,12 @@
     max-width: 39px;
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         position: relative;
         top: 40px;
         max-width: 87px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: 90px;
         max-width: 280px;
     }
@@ -61,20 +61,20 @@
     position: relative;
     top: 0px;
     max-width: 84px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         max-width: 177px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         max-width: 570px;
     }
 }
 
 .gallery__item-3-1 {
     max-width: 37px;
-   @media screen and (min-width: 780px) {
+   @media screen and (min-width: 768px) {
         max-width: 85px;
    }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         max-width: 90px;
     }
 }
@@ -83,12 +83,12 @@
     position: relative;
     top: 20px;
     max-width: 40px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         position: relative;
         top: 44px;
         max-width: 87px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: 100px;
         max-width: 270px;
     }
@@ -98,12 +98,12 @@
     position: relative;
     top: 12px;
     max-width: 39px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         position: relative;
         top: 55px;
         max-width: 85px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: 50px;
         max-width: 265px;  
     }
@@ -113,12 +113,12 @@
     position: relative;
     top: 30px;
     max-width: 40px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         position: relative;
         top: 70px;
         max-width: 85px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: 130px;
         max-width: 270px;
     }
@@ -126,10 +126,10 @@
 
 .gallery__item__img {
     margin: 2px;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
        margin: 3px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin: 5px;
     }
     &:hover,
