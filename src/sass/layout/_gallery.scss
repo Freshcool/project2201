@@ -1,18 +1,14 @@
 
 
 .gallery {
-
-    padding-top: 140px ;
+    padding-top: 97px ;
     background: linear-gradient(to top, #ffffff 43%, #fff5f6 10.7%, );
-    
-   
-
-
-@media screen and (min-width: 479px) {
-    
-        padding-top: 97px;
-        width: 364px;
-        
-        
+    width: 100%;
 }
+
+.gallery-img {
+    img {
+        width: 320px;
+        height: 122px;
+    }
 }
