@@ -17,14 +17,14 @@
         background-image: linear-gradient(to bottom, #fff5f6 37%, #ffffff 37%);
     }
 }
-.gallery__container {
 
-    
+.gallery__container {
     justify-content: center;
     display: flex;
     flex-direction: row;
     
 }
+
 .gallery__item-1 {
     position: relative;
     top: 34px;
@@ -39,10 +39,11 @@
         max-width: 280px;
     }
 }
+
 .gallery__item-2 {
     position: relative;
     top: 17px;
-max-width: 39px;
+    max-width: 39px;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 780px) {
@@ -55,27 +56,29 @@ max-width: 39px;
         max-width: 280px;
     }
 }
+
 .gallery__item-3 {
     position: relative;
     top: 0px;
     max-width: 84px;
     @media screen and (min-width: 780px) {
         max-width: 177px;
-        
+    }
     @media screen and (min-width: 1200px) {
         max-width: 570px;
     }
-    }
 }
+
 .gallery__item-3-1 {
     max-width: 37px;
    @media screen and (min-width: 780px) {
-        max-width: 85px;}
-        
+        max-width: 85px;
+   }
     @media screen and (min-width: 1200px) {
         max-width: 90px;
     }
 }
+
 .gallery__item-4 {
     position: relative;
     top: 20px;
@@ -90,6 +93,7 @@ max-width: 39px;
         max-width: 270px;
     }
 }
+
 .gallery__item-5 {
     position: relative;
     top: 12px;
@@ -101,8 +105,10 @@ max-width: 39px;
     }
     @media screen and (min-width: 1200px) {
         top: 50px;
-        max-width: 265px;   }
+        max-width: 265px;  
+    }
 }
+
 .gallery__item-6 {
     position: relative;
     top: 30px;
@@ -117,6 +123,7 @@ max-width: 39px;
         max-width: 270px;
     }
 }
+
 .gallery__item__img {
     margin: 2px;
     @media screen and (min-width: 780px) {
@@ -133,14 +140,15 @@ max-width: 39px;
         animation-timing-function: linear;
         animation-iteration-count: 1s;
       }
+}
       
-      @keyframes spin {
+@keyframes spin {
 
-        0% {
-          transform: rotate(0deg);
-        }
-      
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
