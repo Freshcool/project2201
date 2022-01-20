@@ -1823,22 +1823,18 @@ body {
 .section-about__backdrop.visually-hidden-cow {
   opacity: 0;
   pointer-events: none;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(3);
-          transform: translate(-50%, -50%) scale(3);
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .section-about__modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transition: -webkit-transform 250ms linear;
-  transition: -webkit-transform 250ms linear;
-  transition: transform 250ms linear;
-  transition: transform 250ms linear, -webkit-transform 250ms linear;
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
   background-image: url("../images/mob/background-milk-mobile1x.png");
