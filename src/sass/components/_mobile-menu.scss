@@ -14,9 +14,9 @@
         width:40%; 
     }
     &.is-hidden{
-        visibility: hidden;
+/*         visibility: hidden;
         pointer-events: none;
-        opacity: 0;  
+        opacity: 0;   */
         right: -100%;
         transition: right 500ms; 
     }
