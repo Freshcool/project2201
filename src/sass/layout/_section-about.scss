@@ -242,8 +242,8 @@
   transition: opacity 500ms linear;
 }
 
-.section-about__backdrop.visually-hidden {
-  opacity: 0;
+.section-about__backdrop.visually-hidden-cow {
+  display: none;
   pointer-events: none;
 }
 

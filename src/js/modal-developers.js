@@ -1,12 +1,12 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
-    };
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-    function toggleModal() {
-      refs.modal.classList.toggle('visually-hidden');
-    }
-  })();
+  const refs = {
+    openModalCow: document.querySelector('[data-modal-open-cow]'),
+    closeModalCow: document.querySelector('[data-modal-close-cow]'),
+    modalCow: document.querySelector('[data-modal-cow]'),
+  };
+  refs.openModalCow.addEventListener('click', toggleModal);
+  refs.closeModalCow.addEventListener('click', toggleModal);
+  function toggleModal() {
+    refs.modalCow.classList.toggle('visually-hidden-cow');
+  }
+})();
