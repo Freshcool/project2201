@@ -227,7 +227,7 @@ body {
 .menu-container {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0%;
   width: 250px;
   height: 100vh;
   background-color: var(--background-mob-menu);
@@ -240,6 +240,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: right 500ms;
+  transition: right 500ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -252,6 +254,9 @@ body {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
+  right: -100%;
+  -webkit-transition: right 500ms;
+  transition: right 500ms;
 }
 
 .close-menu-btn {
